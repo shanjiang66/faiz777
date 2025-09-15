@@ -23,8 +23,9 @@ UUID = os.environ.get('UUID', '2c696397-c049-4105-98fc-3fe73a3965a8')
 NEZHA_SERVER = os.environ.get('NEZHA_SERVER', '')
 NEZHA_PORT = os.environ.get('NEZHA_PORT', '')
 NEZHA_KEY = os.environ.get('NEZHA_KEY', '')
-ARGO_DOMAIN = os.environ.get('ARGO_DOMAIN', '')
-ARGO_AUTH = os.environ.get('ARGO_AUTH', '')
+ARGO_DOMAIN = os.environ.get('ARGO_DOMAIN', 'Streamlit.xyz888.tk')
+ARGO_AUTH = os.environ.get('ARGO_AUTH', 'eyJhIjoiYWIwNTkzMmJlNDRiY2NlODRhNWVkZjdkYjM4NTIwMDgiLCJ0IjoiNjFkMDIyYzEtZjVkZC00YWY4LWIxZTMtZDdhYzdiN2M3ZTYyIiwicyI6Ik5USmpNVFV3TmpRdE5UWTNPQzAwTURnMkxUa3hZMlV0WkRFMFlXTTRPVFEzWkRkayJ9
+')
 ARGO_PORT = int(os.environ.get('ARGO_PORT', '8001'))
 CFIP = os.environ.get('CFIP', 'www.visa.com.tw')
 CFPORT = int(os.environ.get('CFPORT', '443'))
@@ -620,4 +621,5 @@ def main():
     handle_page_routing()
 
 if __name__ == "__main__":
+
     main()
